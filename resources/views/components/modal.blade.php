@@ -4,6 +4,7 @@
      x-show="{{ $trigger }}"
      x-on:click.self="{{ $trigger }} = false"
      x-on:keydown.escape.window="{{ $trigger }} = false" 
+     x-clock
     >
     <div {{ $attributes->merge(['class' => 'm-auto bg-gray-200 shadow-2xl rounded-xl p-8']) }}>
         {{ $slot }}
