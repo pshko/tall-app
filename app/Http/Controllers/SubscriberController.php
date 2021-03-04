@@ -12,6 +12,6 @@ class SubscriberController extends Controller
     	if (! $subscriber->hasVerifiedEmail()) {
     		$subscriber->markEmailAsVerified();
     	}
-    	return redirect('/?verifird=1');
+    	return redirect('/?verified=1');
     }
 }
