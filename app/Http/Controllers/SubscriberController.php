@@ -16,8 +16,6 @@ class SubscriberController extends Controller
     }
     public function all()
     {
-    	return view('subscribers.all')->with([
-    		'subscribers' => Subscriber::paginate(10),
-    	]);
+    	return view('subscribers.all');
     }
 }
